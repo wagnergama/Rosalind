@@ -27,7 +27,7 @@ with open('rosalind_mprt.txt') as f:
         s = dict_fasta[id]
         locations = ''
         for i in range(0, len(s)):
-            # Check for the N-glycosylation motif is written as N{P}[ST]{P}.
+            # Verifica se a sequencia possui o motif N-glycosylation N{P}[ST]{P}.
             if (s[i] == 'N') and (s[i + 1] != 'P') and (s[i + 2] in ['S', 'T']) and (s[i + 3] != 'P'):
                 locations += str(i + 1) + ' '
 
