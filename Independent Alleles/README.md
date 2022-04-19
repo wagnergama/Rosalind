@@ -8,19 +8,12 @@ More generally, random variables **X** and **Y** are independent if whenever **A
 
 As an example of how helpful independence can be for calculating probabilities, let *X* and *Y* represent the numbers showing on two six-sided dice. Intuitively, the number of pips showing on one die should not affect the number showing on the other die. If we want to find the probability that *X+Y* is odd, then we don't need to draw a tree diagram and consider all possibilities. We simply first note that for **X+Y** to be odd, either **X** is even and **Y** is odd or **X** is odd and **Y** is even. In terms of probability, **Pr(X+Y is odd)=Pr(X is even and Y is odd)+Pr(X is odd and Y is even)**. Using independence, this becomes [**Pr(X is even)×Pr(Y is odd)**]+[**Pr(X is odd)×Pr(Y is even)**], or ($\frac{1}{2}$)$^2$ + ($\frac{1}{2}$)$^2$ = $\frac{1}{2}$. You can verify this result in `Figure 2`, which shows all 36 outcomes for rolling two dice.
 
-<<<<<<< HEAD
 ![](./figura1.bmp)
-=======
-As an example of how helpful independence can be for calculating probabilities, let X and Y represent the numbers showing on two six-sided dice. Intuitively, the number of pips showing on one die should not affect the number showing on the other die. If we want to find the probability that X+Y is odd, then we don't need to draw a tree diagram and consider all possibilities. We simply first note that for X+Y to be odd, either X is even and Y is odd or X is odd and Y is even. In terms of probability, Pr(X+Y is odd)=Pr(X is even and Y is odd)+Pr(X is odd and Y is even). Using independence, this becomes [Pr(X is even)×Pr(Y is odd)]+[Pr(X is odd)×Pr(Y is even)], or (1/2)*2+(1/2)*2=1/2. You can verify this result in Figure 2, which shows all 36 outcomes for rolling two dice.
->>>>>>> 86d9161c31c659ce762ae80aecb8e5dde6744262
 
+As an example of how helpful independence can be for calculating probabilities, let X and Y represent the numbers showing on two six-sided dice. Intuitively, the number of pips showing on one die should not affect the number showing on the other die. If we want to find the probability that X+Y is odd, then we don't need to draw a tree diagram and consider all possibilities. We simply first note that for X+Y to be odd, either X is even and Y is odd or X is odd and Y is even. In terms of probability, Pr(X+Y is odd)=Pr(X is even and Y is odd)+Pr(X is odd and Y is even). Using independence, this becomes [Pr(X is even)×Pr(Y is odd)]+[Pr(X is odd)×Pr(Y is even)], or (1/2)*2+(1/2)*2=1/2. You can verify this result in Figure 2, which shows all 36 outcomes for rolling two dice.
 
 `Given:` Two positive integers k **(k≤7)** and N **(N≤2k)**. In this problem, we begin with Tom, who in the 0th generation has genotype Aa Bb. Tom has two children in the 1st generation, each of whom has two children, and so on. Each organism always mates with an organism having genotype Aa Bb.
 
 `Return:` The probability that at least N Aa Bb organisms will belong to the k-th generation of Tom's family tree (don't count the Aa Bb mates at each level). Assume that Mendel's second law holds for the factors.
 
-For more information, see ["Independent Alleles in Rosalind"](https://rosalind.info/problems/lia/)<<<<<<< HEAD
 For more information, see ["Independent Alleles in Rosalind"](https://rosalind.info/problems/lia/)
-=======
-https://rosalind.info/problems/lia/
->>>>>>> 86d9161c31c659ce762ae80aecb8e5dde6744262
